@@ -1,0 +1,725 @@
+body
+{
+	
+	background-image: url('bg1small.png');
+	font-family: 'Perfect DOS VGA 437 Win';
+	text-decoration: none;
+	background-color:#202020;
+}
+/*
+#UI
+{
+ matrix3d(a1, b1, c1, d1, a2, b2, c2, d2, a3, b3, c3, d3, a4, b4, c4, d4)
+ matrix3d(
+1.0057053545079953,	0,	0,	0.00001092979790803668,
+-0.028360919211254946,	0.9756156208671702,	0,	-0.00014176964612110367,
+0,	0,	1,	0,
+0,	0,	0,	1
+);
+ transform-origin: 0px 0px 0px;
+	position:relative;
+	height:100%;
+	width:100%;
+}
+*/
+.console
+{
+	position:absolute;
+	top:15px;
+	height:2px;
+	width:calc(50% - 190px);
+	background-color:#cacaca;
+}
+#console1
+{
+	left:10px;
+}
+#console2
+{
+	right:10px;
+}
+#midConsole
+{
+	position:absolute;
+	left:calc(50% - 165px);
+	color:#cacaca;
+	font-size:16px;	
+
+}
+#GrimHexTitle
+{
+	position:absolute;
+	top:30px;
+	left:10px;
+	height:40px;
+	width:calc(100% - 20px);
+	background-color:#cacaca;
+}
+#GrimHexTitleInt
+{
+	position:absolute;
+	top:10px;
+	left:10px;
+	color:black;
+	font-size:20px;
+}
+#GrimHexBuy, #GrimHexSell
+{
+	position:absolute;
+	top:1;
+	height:38px;
+	width:70px;
+	font-size:19px;
+}
+#GrimHexBuyInt, #GrimHexSellInt
+{
+	margin-top:10px;
+	text-align:center;
+}
+#GrimHexBuy
+{
+	background-color:#7cf847;
+	right:calc(50% + 10px);
+}
+#GrimHexSell
+{
+	background-color:#cacaca;
+	left:calc(50% + 10px);
+}
+#GrimHexSell:hover
+{
+	background-color:black;
+	color:#cacaca;
+	cursor:pointer;
+}
+#GrimHexWallet
+{
+	position:absolute;
+	right:60px;
+	top:4px;
+}
+#GrimHexWalletValue
+{
+	position:absolute;
+	right:60px;
+	top:20px;
+	font-weight:bold;
+}
+#GrimHexClose
+{
+	position:absolute;
+	right:18px;
+	top:6px;
+	font-size:20px;
+	width:28px;
+	height:28px;
+	text-align:center;
+	line-height: 32px;
+}
+#GrimHexClose:hover
+{
+	background-color:black;
+	color:#cacaca;
+	cursor:pointer;
+}
+/*------------------------------------------
+--------------------------------------------
+------------------------------------------*/
+#Left
+{
+	position:absolute;
+	top:85px;
+	left:10px;
+	height:calc(100% - 100px);
+	width:calc(25% - 0px);
+	border:2px solid #cacaca;	
+}
+#LeftTop
+{
+	margin:-2px;
+	width:100%;
+	height:25%;
+	border:2px solid #cacaca;
+}
+#Ltitle1
+{
+	margin:15px;
+	color:rgb(125, 125, 125);
+	font-size:20px;
+}
+#Ltitle2
+{
+	margin:15px;
+	color:#7cf847;
+	font-size:20px;
+	text-decoration: none;
+	text-margin:10;
+	height:30px;
+	width:calc(100% - 40px);
+	border:2px solid #7cf847;
+	box-shadow:5px 5px #7cf847;
+}
+#Ltitle2int
+{
+	margin:6px;
+}
+#LInfo
+{
+	position:relative;
+	color:#cacaca;
+	margin-top:0px;
+	margin-left:0px;
+	height:50%;
+	width:100%;
+	/background-color:white;
+}
+#LInfo11, #LInfo12, #LInfo21, #LInfo22
+{
+	position:absolute;
+	font-size:18px;
+}
+#LInfo11
+{
+	top:20%;
+	left:5%;
+}
+#LInfo12
+{
+	bottom:30%;
+	left:5%;
+}
+#LInfo21
+{
+	top:20%;
+	right:5%;
+	font-weight:bold;
+}
+#LInfo22
+{
+	right:5%;
+	bottom:30%;
+	font-weight:bold;
+}
+#LLegend
+{
+	position:relative;
+	color:#cacaca;
+	margin-top:30px;
+	margin-left:25px;
+	height:23px;
+	width:calc(100% - 60px);
+}
+#LLegend11, #LLegend12, #LLegend21, #LLegend22
+{
+	position:absolute;
+	font-size:20px;
+}
+#LLegend11
+{
+	left:0px;
+}
+#LLegend12
+{
+	left:25%;
+}
+#LLegend21
+{
+	right:25%;
+}
+#LLegend22
+{
+	right:0px;
+}
+#LLinks
+{
+	position:relative;
+	top:0px;
+	left:15px;
+	width:calc(100% - 30px);
+	height:calc(100% - 500px);
+}
+.Llinkbox1
+{
+	position:relative;
+	color:#cacaca;
+	height:34px;
+	width:calc(100%);
+	background-color:rgba(56, 90, 42, 0.38);
+}
+.Llinkbox2
+{
+	color:#cacaca;
+	height:34px;
+	width:calc(100%);	
+}
+.Llinkbox1:hover, .Llinkbox2:hover
+{
+	background-color:#7cf847;
+	color:black;
+}
+.Llinkbox1int,.Llinkbox2int
+{
+	position:relative;
+	top:8px;
+	left:10px;
+	font-size:18px;
+	width:calc(100% - 20px);
+}
+.LLPerc, .LLName, .LLAmount, .LLValue
+{
+	position:absolute;
+	top:0;
+}
+.LLPerc
+{
+	right:calc(100% - 45px);
+}
+.LLName
+{
+	left:25%;	
+}
+.LLAmount
+{
+	right:25%;	
+}
+.LLValue
+{
+	right:0px;
+}
+.LLinks
+{
+	position:relative;
+	top:0px;
+	left:15px;
+	width:calc(100% - 30px);
+}
+#CCV
+{
+	position:absolute;
+	bottom:-2px;
+	left:-2px;
+	height:80px;
+	width:100%;
+	border:2px solid #cacaca;	
+}
+#CCVInt
+{
+	position:relative;
+	top:calc(50% - 11px);
+	font-size:18px;
+	color:#cacaca;
+	height:40px;
+	width:100%;		
+}
+#CCVInt1
+{
+	position:absolute;
+	top:;
+	left:4%;		
+}
+#CCVInt2
+{
+	position:absolute;
+	right:4%;		
+	font-weight:bolder;
+}
+/*------------------------------------------
+--------------------------------------------
+------------------------------------------*/
+#Main
+{
+	position:absolute;
+	top:85px;
+	left:calc(25% + 30px);
+	height:calc(100% - 100px);
+	width:calc(40% - 0px);
+	border:2px solid #cacaca;
+}
+#Mtitle1
+{
+	margin:15px;
+	color:rgb(125, 125, 125);
+	font-size:20px;
+
+}
+#Mtitle2
+{
+	margin:15px;
+	color:#7cf847;
+	font-size:20px;
+	text-decoration: none;
+	height:30px;
+	width:calc(100% - 39px);
+	border:2px solid #7cf847;
+	box-shadow:5px 5px #7cf847;
+	cursor:pointer;
+}
+#Mtitle2:hover
+{
+	background-color:#7cf847;
+	color:black;
+}
+#Mtitle2int
+{
+	margin:6px;
+}
+#Mfilters
+{
+	position:absolute;
+	font-size:20px;
+	text-decoration: none;
+	width:calc(100% - 39px);
+	left:15px;
+	top:50px;
+	border:2px solid #7cf847;
+	/border-left:2px solid #7cf847;
+	/border-right:2px solid #7cf847;
+	/border-bottom:2px solid #7cf847;
+	box-shadow:5px 5px #7cf847;
+	cursor:pointer;	
+	background-color:yellow;
+	background-image: url('bg1small.png');
+}
+.Mfilters0
+{
+	color:#7cf847;
+	position:relative;
+	/border:2px solid #7cf847;
+	/margin:-2px;
+	height:30px;
+	width:100%;
+}
+.Mfilters0int
+{
+	position:absolute;
+	margin:6px;
+}
+.Mfilters0:hover
+{
+	background-color:#7cf847;	
+	color:black;
+}
+#MLegend
+{
+	position:relative;
+	color:#cacaca;
+	margin-top:30px;
+	height:25px;
+}
+#MLegend1, #MLegend2, #MLegend3
+{
+	position:absolute;
+	font-size:20px;
+}
+#MLegend1
+{
+	left:40px;
+}
+#MLegend2
+{
+	left:30%;
+}
+#MLegend3
+{
+	right:40px;
+}
+.MLAmount, .MLUpdown, .MLName, .MLDesc, .MLScuA, .MLScuB, .MLTotalA, .MLTotalB
+{
+	position:absolute;
+}
+.MLAmount
+{
+	top:25px;
+	left:20px;
+	font-size:20px;
+	font-weight:bold;
+}
+.MLUpdown
+{
+	top:25px;
+	left:60px;	
+}
+.MLName
+{
+	top:15px;
+	left:90px;
+	font-size:20px;
+}
+.MLDesc
+{
+	top:34px;
+	left:90px;
+	opacity:.7;
+}
+.MLScuA
+{
+	top:20px;
+	right:80px;
+}
+.MLScuB
+{
+	top:20px;
+	right:15px;
+}
+.MLTotalA
+{
+	top:34px;
+	right:80px;
+}
+.MLTotalB
+{
+	top:34px;
+	right:15px;
+}
+.MLinks
+{
+	position:absolute;
+	top:136px;
+	left:15px;
+	width:calc(100% - 30px);
+	height:calc(100% - 500px);
+}
+.Mlinkbox1, .Mlinkbox2
+{
+	position:relative;
+	color:#cacaca;
+	height:calc(35px + 10%);
+	width:calc(100% - 0px);
+}
+.Mlinkbox1
+{
+	background-color:rgba(56, 90, 42, 0.38);
+}
+.Mlinkbox2
+{
+}
+.Mlinkbox1:hover, .Mlinkbox2:hover
+{
+	background-color:#7cf847;
+	color:black;
+}
+.Mlinkbox1int,.Mlinkbox2int
+{
+	position:relative;
+	top:10px;
+	left:10px;
+}
+.link
+{
+	text-decoration: none;
+}
+/*------------------------------------------
+--------------------------------------------
+------------------------------------------*/
+#Right
+{
+	position:absolute;
+	top:85px;
+	right:10px;
+	height:calc(100% - 100px);
+	width:calc(35% - 65px);
+	border:2px solid #cacaca;	
+}
+#ShipOverview
+{
+	position:absolute;
+	left:-2px;
+	top:-2px;
+	width:100%;
+	height:calc(100% - 359px);
+	border:2px solid #cacaca;	
+}
+#ShipOverviewInt
+{
+	position:relative;
+	display:block;
+	margin:auto;
+	top:-0px;
+	height:100%;
+}
+#FacTotInv
+{
+	position:absolute;
+	left:-2px;
+	bottom:265px;
+	width:100%;
+	height:90px;
+	border:2px solid #cacaca;	
+}
+#FacTotInvInt
+{
+	margin:20px;
+	font-size:16px;
+}
+#FTI1
+{
+	position:absolute;
+	top:20px;
+	color:#cacaca;
+
+}
+#FTI2
+{
+	position:absolute;
+	top:40px;
+	color:#cacaca;
+	font-weight:bold;
+}
+#FTI3
+{
+	position:relative;
+	top:40px;
+}
+#FTI31
+{
+	position:absolute;
+	top:0px;
+	color:#7cf847;
+	z-index:2;
+}
+#FTI32
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+	color:#505050;
+}
+#FTI4
+{
+	position:absolute;
+	top:20px;
+	right:20px;
+	color:#cacaca;
+}
+#FTI5
+{
+	position:absolute;
+	top:40px;
+	right:20px;
+	color:#cacaca;
+	font-weight:bold;
+}
+#AmountSell
+{
+	position:absolute;
+	left:0px;
+	bottom:217px;
+	width:100%;
+	height: 50px;
+	background-color: #cacaca;
+}
+#AmountSellInt
+{
+	position:absolute;
+	top:15px;
+	left:20px;
+	font-size:20px;
+}
+#UnloadTime
+{
+	position:absolute;
+	left:-2px;
+	bottom:100px;
+	width:100%;
+	height:115px;
+	border:2px solid #cacaca;	
+}
+#UnloadTimeInt
+{
+	margin:20px;
+}
+#UT1
+{
+	position:absolute;
+	top:20px;
+	color:#cacaca;
+	font-size:22px;
+}
+#UT2
+{
+	position:absolute;
+	top:46px;
+	color:#cacaca;
+	font-size:14px;
+}
+#UT3
+{
+	position:relative;
+	top:60px;
+}
+#UT31
+{
+	position:absolute;
+	top:0px;
+	color:#cacaca;
+	font-size:14px;
+}
+#UT32
+{
+	position:absolute;
+	top:-4px;
+	left:28px;
+	color:#7cf847;
+	font-size:24px;
+	z-index:2;
+}
+#UT33
+{
+	position:absolute;
+	top:-3px;
+	left:285px;
+	color:#7cf847;
+	font-size:24px;
+	font-weight:bold;
+	z-index:2;
+}
+#UT34
+{
+	position:absolute;
+	top:-4px;
+	right:40px;
+	color:#505050;
+	font-size:24px;
+	z-index:1;
+}
+#UT35
+{
+	position:absolute;
+	top:-1px;
+	right:0px;
+	color:#cacaca;
+	font-size:16px;
+}
+#SellBoxExt
+{
+	position:absolute;
+	left:-2px;
+	bottom:-2px;
+	width:100%;
+	height:100px;
+	border:2px solid #cacaca;
+}
+#SellBox
+{
+	position:relative;
+	top:24px;
+	left:calc(5% - 2px);
+	display:block;
+	color:#7cf847;
+	font-size:22px;
+	height:45px;
+	width:90%;
+	border:2px solid #7cf847;
+	cursor:pointer;
+}
+#SellBoxInt
+{
+	position:absolute;
+	top:11px;
+	left:calc(50% - 147px);
+}
+#SellBox:hover
+{
+	background-color:#7cf847;
+	color:black;
+}

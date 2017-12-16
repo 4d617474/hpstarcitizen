@@ -1,0 +1,907 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="stylesc.css">
+		<title> </title>
+		<link rel="shortcut icon" href="mico.png">
+	</head>
+		
+	<body>
+	
+	<div id="UI">
+		<!-- 
+							<div id="MLAmount1" class="MLAmount"></div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName"></div>
+							<div id="MLDesc1" class="MLDesc"></div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB"></div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB"></div>
+		-->
+	
+		<div id="console1" class="console"></div><div id="midConsole">SCR_InvConsole V1.6a Trial *Exprired*</div><div id="console2" class="console"></div>
+		<div id="GrimHexTitle">
+			<div id="GrimHexTitleInt">GRIM HEX TRADING STATION</div>
+			<div id="GrimHexBuy">
+				<div id="GrimHexBuyInt">Buy</div>
+			</div>
+			<div id="GrimHexSell">
+				<div id="GrimHexSellInt">Sell</div>
+			</div>
+			<div id="GrimHexWallet">Wallet</div>
+			<div id="GrimHexWalletValue">4.341 aUEC</div>
+			<div id="GrimHexClose">X</div>
+		</div>
+		<div id="Left">
+			<div id="LeftTop">
+				<div id="Ltitle1">/Sell-From_Location</div>
+				<div id="Ltitle2">
+					<div id="Ltitle2int">Cutlass Black</div>
+				</div>
+				<div id="LInfo">
+					<div id="LInfo11">Total Cargo</div>
+					<div id="LInfo12">Empty Cargo</div>
+					<div id="LInfo21">200 SCU</div>
+					<div id="LInfo22">15 SCU</div>
+				</div>
+				
+			</div>
+			<div id="LLegend">
+				<div id="LLegend11">PERC</div>
+				<div id="LLegend12">TYPE</div>
+				<div id="LLegend21">AMT</div>
+				<div id="LLegend22">VALUE</div>
+			</div>
+			<div id="LLinks">
+				<a id="Llink1" class="link" href="">
+						<div class="Llinkbox1">
+							<div class="Llinkbox1int">
+								<div id="LLPerc1" class="LLPerc">65%</div>
+								<div id="LLName1" class="LLName">Ore</div>
+								<div id="LLAmount1" class="LLAmount">25</div>
+								<div id="LLValue1" class="LLValue">8,736</div>
+							</div>
+						</div>
+				</a>
+				
+				<a id="Llink2" class="link" href="">
+						<div class="Llinkbox2">
+							<div class="Llinkbox2int">
+								<div id="LLPerc2" class="LLPerc">14%</div>
+								<div id="LLName2" class="LLName">Gas</div>
+								<div id="LLAmount2" class="LLAmount">12</div>
+								<div id="LLValue2" class="LLValue">275</div>
+							</div>
+						</div>
+				</a>
+				
+				<a id="Llink1" class="link" href="">
+						<div class="Llinkbox1">
+							<div class="Llinkbox1int">
+								<div id="LLPerc3" class="LLPerc">6%</div>
+								<div id="LLName3" class="LLName">Scrap</div>
+								<div id="LLAmount3" class="LLAmount">7</div>
+								<div id="LLValue3" class="LLValue">4,061</div>
+							</div>
+						</div>
+				</a>
+				
+				<a id="Llink2" class="link" href="">
+						<div class="Llinkbox2">
+							<div class="Llinkbox2int">
+								<div id="LLPerc2" class="LLPerc">6%</div>
+								<div id="LLName2" class="LLName">Food</div>
+								<div id="LLAmount2" class="LLAmount">6</div>
+								<div id="LLValue2" class="LLValue">4,920</div>
+							</div>
+						</div>
+				</a>
+				
+				<a id="Llink1" class="link" href="">
+						<div class="Llinkbox1">
+							<div class="Llinkbox1int">
+								<div id="LLPerc2" class="LLPerc">5%</div>
+								<div id="LLName2" class="LLName">Consumer Goods</div>
+								<div id="LLAmount2" class="LLAmount">5</div>
+								<div id="LLValue2" class="LLValue">459</div>
+							</div>
+						</div>
+				</a>
+				
+				<a id="Llink2" class="link" href="">
+						<div class="Llinkbox2">
+							<div class="Llinkbox2int">
+								<div id="LLPerc2" class="LLPerc">4%</div>
+								<div id="LLName2" class="LLName">Vice</div>
+								<div id="LLAmount2" class="LLAmount">4</div>
+								<div id="LLValue2" class="LLValue">2,492</div>
+							</div>
+						</div>
+				</a>
+				
+			</div>
+			<div id="CCV">
+				<div id="CCVInt">
+					<div id="CCVInt1">Commodity Cargo Value</div>
+					<div id="CCVInt2">20,943 aUEC</div>
+				</div>
+			</div>
+			
+		</div>		
+		<div id="Main">
+			<div id="Mtitle1">/ ../Acceptable_Comodities</div>
+			<div id="Mtitle2" onmousedown="Mfilters1toggle()">
+				<div id="Mtitle2int">
+					Filters	
+				</div>
+				
+			</div>
+			<div id="Mfilters" style="z-index:-1;opacity=0.0;">
+				<div id="Mfilters1" class="Mfilters0" onmousedown="Mfilters1O1()">
+					<div id="Mfilters1int" class="Mfilters0int">One</div>
+				</div>
+				
+				<div id="Mfilters2" class="Mfilters0" onmousedown="Mfilters1O2()">
+					<div id="Mfilters2int" class="Mfilters0int">Two</div>
+				</div>
+				
+				<div class="Mfilters0" onmousedown="Mfilters1O3()">
+					<div class="Mfilters0int">Three</div>
+				</div>	
+				
+				<div class="Mfilters0" onmousedown="Mfilters1O4()">
+					<div class="Mfilters0int">Four</div>
+				</div>		
+				
+				<div class="Mfilters0" onmousedown="Mfilters1O5()">
+					<div class="Mfilters0int">Five</div>
+				</div>						
+			</div>
+			
+			<div id="MLegend">
+				<div id="MLegend1">AMT</div>
+				<div id="MLegend2">COMMODITY</div>
+				<div id="MLegend3">VALUE</div>
+			</div>
+			<div class="MLinks" id="MLinks1" style="z-index:-1;opacity:0;">
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">6</div>
+							<div id="MLUpdown1" class="MLUpdown">↑</div>
+							<div id="MLName1" class="MLName">One</div>
+							<div id="MLDesc1" class="MLDesc">Ore</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">649</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">3.894</div>
+						</div>
+				</a>
+				
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">7</div>
+							<div id="MLUpdown1" class="MLUpdown">↑</div>
+							<div id="MLName1" class="MLName">Two</div>
+							<div id="MLDesc1" class="MLDesc">Ore</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">504</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">3.528</div>
+						</div>
+				</a>
+				
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">3</div>
+							<div id="MLUpdown1" class="MLUpdown"></div>
+							<div id="MLName1" class="MLName">Three</div>
+							<div id="MLDesc1" class="MLDesc">Ore</div>
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">97</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">291</div>
+						</div>
+				</a>
+				
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">1</div>
+							<div id="MLUpdown1" class="MLUpdown"></div>
+							<div id="MLName1" class="MLName">Four</div>
+							<div id="MLDesc1" class="MLDesc">Gas</div>
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">1.023</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">1.023</div>
+						</div>
+				</a>
+				
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">6</div>
+							<div id="MLUpdown1" class="MLUpdown"></div>
+							<div id="MLName1" class="MLName">Five</div>
+							<div id="MLDesc1" class="MLDesc">Gas</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">18</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">108</div>
+						</div>
+				</a>	
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">5</div>
+							<div id="MLUpdown1" class="MLUpdown">↓</div>
+							<div id="MLName1" class="MLName">Six</div>
+							<div id="MLDesc1" class="MLDesc">Gas</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">27</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">135</div>
+						</div>
+				</a>
+				
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">1</div>
+							<div id="MLUpdown1" class="MLUpdown">↓</div>
+							<div id="MLName1" class="MLName">Seven</div>
+							<div id="MLDesc1" class="MLDesc">Gas</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">32</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">32</div>
+						</div>
+				</a>	
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">3</div>
+							<div id="MLUpdown1" class="MLUpdown"></div>
+							<div id="MLName1" class="MLName">Eight</div>
+							<div id="MLDesc1" class="MLDesc">Component</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">322</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">3.873</div>
+						</div>
+				</a>		
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">16</div>
+							<div id="MLUpdown1" class="MLUpdown"></div>
+							<div id="MLName1" class="MLName">Nine</div>
+							<div id="MLDesc1" class="MLDesc">Component</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">132</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">2.112</div>
+						</div>
+				</a>	
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">4</div>
+							<div id="MLUpdown1" class="MLUpdown">↑</div>
+							<div id="MLName1" class="MLName">Ten</div>
+							<div id="MLDesc1" class="MLDesc">Component</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">349</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">1.047</div>
+						</div>
+				</a>	
+			</div>
+			<div class="MLinks" id="MLinks2" style="z-index:-1;opacity:0;">
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">2</div>
+							<div id="MLUpdown1" class="MLUpdown">↑</div>
+							<div id="MLName1" class="MLName">Eleven</div>
+							<div id="MLDesc1" class="MLDesc">Gas</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">240</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">480</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">5</div>
+							<div id="MLUpdown1" class="MLUpdown"></div>
+							<div id="MLName1" class="MLName">Twelve</div>
+							<div id="MLDesc1" class="MLDesc">Ore</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">289</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">1.445</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">59</div>
+							<div id="MLUpdown1" class="MLUpdown">↓</div>
+							<div id="MLName1" class="MLName">Thirteen</div>
+							<div id="MLDesc1" class="MLDesc">Ore</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">37</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">2.183</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">20</div>
+							<div id="MLUpdown1" class="MLUpdown"></div>
+							<div id="MLName1" class="MLName">Fourteen</div>
+							<div id="MLDesc1" class="MLDesc">Component</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">61</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">1.220</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+			</div>
+			<div class="MLinks" id="MLinks3" style="z-index:-1;opacity:0;">
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">3</div>
+							<div id="MLUpdown1" class="MLUpdown"></div>
+							<div id="MLName1" class="MLName">Twenty-One</div>
+							<div id="MLDesc1" class="MLDesc">Gas</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">763</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">2.289</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">14</div>
+							<div id="MLUpdown1" class="MLUpdown">↓</div>
+							<div id="MLName1" class="MLName">Twenty-Two</div>
+							<div id="MLDesc1" class="MLDesc">Gas</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">51</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">714</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">9</div>
+							<div id="MLUpdown1" class="MLUpdown">↓</div>
+							<div id="MLName1" class="MLName">Twenty-three</div>
+							<div id="MLDesc1" class="MLDesc">Component</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">314</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">2.826</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a><a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+			</div>
+			<div class="MLinks" id="MLinks4" style="z-index:-1;opacity:0;">
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">Thirty-one</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">Thirty-two</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">Thirty-three</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">Thirty-four</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">Thirty-five</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+			</div>
+			<div class="MLinks" id="MLinks5" style="z-index:-1;opacity:0;">
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">784</div>
+							<div id="MLUpdown1" class="MLUpdown">↓</div>
+							<div id="MLName1" class="MLName">Fourty-one</div>
+							<div id="MLDesc1" class="MLDesc">Ore</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">1</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">784</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">3</div>
+							<div id="MLUpdown1" class="MLUpdown">↑</div>
+							<div id="MLName1" class="MLName">Fourty-two</div>
+							<div id="MLDesc1" class="MLDesc">Ore</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">152</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">456</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink1" class="link" href="">
+						<div class="Mlinkbox1">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+				<a id="Mlink2" class="link" href="">
+						<div class="Mlinkbox2">
+							<div id="MLAmount1" class="MLAmount">-</div>
+							<div id="MLUpdown1" class="MLUpdown">↑↓</div>
+							<div id="MLName1" class="MLName">-</div>
+							<div id="MLDesc1" class="MLDesc">-</div>							
+							<div id="MLScuA1" class="MLScuA">Per SCU:</div>
+							<div id="MLScuB1" class="MLScuB">-</div>
+							<div id="MLTotalA1" class="MLTotalA">Total:</div>
+							<div id="MLTotalB1" class="MLTotalB">-</div>
+						</div>
+				</a>
+			</div>
+		</div>
+		<div id="Right">
+			<div id="Mtitle1">/ ../Ship Overview</div>
+			<div id="ShipOverview">
+				<img id="ShipOverviewInt" src="cutlassbox.png">
+			</div>
+			
+			<div id="FacTotInv">
+				 <div id="FacTotInvInt">
+					<div id="FTI1">Facility Total Inventory</div>
+					<div id="FTI2">Demand for Magnetic Wavegaguides</div>
+					<div id="FTI3">
+						<div id="FTI31">+++++++++++++++++++++++</div>
+						<div id="FTI32">---------------------------------------</div>
+						
+					</div>
+					<div id="FTI4">1.235 / 3.000</div>
+					<div id="FTI5">31%</div>
+				 </div>
+			</div>
+			<div id="AmountSell">
+				 <div id="AmountSellInt">Amount to Sell</div>
+			</div>
+			
+			<div id="UnloadTime">
+				 <div id="UnloadTimeInt">
+					<div id="UT1">8 SCU FOR 2.576 aUEC</div>
+					<div id="UT2">Unload Time: +12:40 min</div>
+					<div id="UT3">
+						<div id="UT31">MIN</div>
+						<div id="UT32">+++++++++++++++++++</div>
+						<div id="UT33">[]</div>
+						<div id="UT34">---------------</div>
+						<div id="UT35">MAX</div>
+					</div>
+				 </div>
+			</div>
+			
+			<div id="SellBoxExt">
+				<div id="SellBox">
+					 <div id="SellBoxInt">Sell Magnetic Waveguides</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+	<script>
+	
+		var fMainUBox = document.getElementById("Mfilters");
+		var Mtitle2int = document.getElementById("Mtitle2int");	
+		var fMainNumber = 0;
+		var iFil = 0;
+		var IsOnfMainUBox = 0;
+		var MLinks1 = document.getElementById("MLinks1");
+		var MLinks2 = document.getElementById("MLinks2");
+		var MLinks3 = document.getElementById("MLinks3");
+		var MLinks4 = document.getElementById("MLinks4");
+		var MLinks5 = document.getElementById("MLinks5");
+		
+		Mfilters1O1()
+		
+		function Mfilters1toggle() {
+			if (IsOnfMainUBox == 0) {
+			fMainUBox.style.zIndex = '5';
+			fMainUBox.style.opacity = '1';
+			appIsOpen = 1;
+			} else {
+			Mfilters1Ou();
+		}}
+		
+		function Mfilters1Ou() {
+			fMainUBox.style.zIndex = '-1';
+			fMainUBox.style.opacity = '0';			
+			appIsOpen = 0;
+		}
+		
+		function Mfilters1ORESET() {
+			MLinks1.style.opacity = '0';
+			MLinks1.style.zIndex = '-1';
+			MLinks2.style.opacity = '0';
+			MLinks2.style.zIndex = '-1';
+			MLinks3.style.opacity = '0';
+			MLinks3.style.zIndex = '-1';
+			MLinks4.style.opacity = '0';
+			MLinks4.style.zIndex = '-1';
+			MLinks5.style.opacity = '0';
+			MLinks5.style.zIndex = '-1';
+		}
+		
+		function Mfilters1O1() {
+			Mfilters1ORESET();
+			MLinks1.style.zIndex = '1';
+			MLinks1.style.opacity = '1';
+			Mtitle2int.innerHTML= "One";
+			Mfilters1Ou();
+		}
+		function Mfilters1O2() {
+			Mfilters1ORESET()
+			MLinks2.style.zIndex = '1';
+			MLinks2.style.opacity = '1';
+			Mtitle2int.innerHTML= "Two";
+			Mfilters1Ou();
+		}
+		function Mfilters1O3() {
+			Mfilters1ORESET()
+			MLinks3.style.zIndex = '1';
+			MLinks3.style.opacity = '1';
+			Mtitle2int.innerHTML= "Three";
+			Mfilters1Ou()
+		}
+		function Mfilters1O4() {
+			Mfilters1ORESET()
+			MLinks4.style.zIndex = '1';
+			MLinks4.style.opacity = '1';
+			Mtitle2int.innerHTML= "Four";
+			Mfilters1Ou()
+		}
+		function Mfilters1O5() {
+			Mfilters1ORESET()
+			MLinks5.style.zIndex = '1';
+			MLinks5.style.opacity = '1';
+			Mtitle2int.innerHTML= "Five";
+			Mfilters1Ou()
+		}
+	</script>
+	
+</html>
